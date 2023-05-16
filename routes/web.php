@@ -20,3 +20,4 @@ Route::get('/home/{id?}',[pageController::class, 'tryin'] )->name('showImg');
 
 
 //git test
+//ggg
