@@ -14,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\pageController;
 
-Route::get('/', [pageController::class, 'index']);
+// Route::get('/', [pageController::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/home/{id?}',[pageController::class, 'tryin'] )->name('showImg');
+// Route::get('/home/{id?}',[pageController::class, 'tryin'] )->name('showImg');
+// Route::get('', 'UserController@index')->name('user');
 
-
-//git test
+//
 //ggg
